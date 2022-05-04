@@ -49,18 +49,18 @@
 const array = [10,12,3];
 console.log(array)
 
-
+let laSomma = 0;
 let i = 0;
 
 do{
     
     const askClient = parseInt(prompt(`Dimmi un numero`));
     array.push(askClient);
-    i++;
-}while (i < 2 );
-
-const laSomma = theSum(array)
-console.log(laSomma)
+     laSomma = theSum(array)
+    laSomma++;
+    }while (laSomma <= 50 );
+    
+    console.log(laSomma)
 
 
 function theSum(allNumbers){
